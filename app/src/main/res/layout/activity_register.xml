@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+  >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="140dp"
+        android:layout_height="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="-100dp"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textSize="55sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailRegister"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-65dp"
+        android:background="#11000000"
+
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:textColorHint="@color/common_google_signin_btn_text_light"
+        android:textSize="16dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/emailRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="-50dp"
+        android:background="#11000000"
+
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:textColorHint="@color/common_google_signin_btn_text_light" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/passwordRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="-50dp"
+        android:background="#11000000"
+
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:textColorHint="@color/common_google_signin_btn_text_light" />
+
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/confirmPassword"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="-81dp"
+        android:background="@color/white"
+        android:text="Register"
+        android:textColor="#FFFF"
+        android:textSize="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>

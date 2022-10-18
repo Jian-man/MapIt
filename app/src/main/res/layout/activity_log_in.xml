@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".LogInActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="140dp"
+        android:layout_height="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-88dp"
+        android:text="Log In"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="53dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailSignIn"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-65dp"
+        android:background="@color/browser_actions_bg_grey"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:textColorHint="@color/common_google_signin_btn_text_light"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/emailSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="-50dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:password="true"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:textColorHint="@color/common_google_signin_btn_text_light" />
+
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/password"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-94dp"
+        android:background="@color/white"
+        android:text="Login"
+        android:textColor="#FFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Login"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-62dp"
+        android:clickable="true"
+        android:minHeight="48dp"
+        android:text="Forgot Password ?"
+
+        android:textColor="@color/black" />
+
+    <ProgressBar
+        android:id="@+id/progressbars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>
